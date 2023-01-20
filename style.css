@@ -22,8 +22,16 @@ nav ul{
     align-items: center;
 }
 
+nav ul li{
+    padding: 0 1em;
+}
+
+
+
+
 .brand img{
-    width: 49px;
+    width: 45px;
+    padding-right: 0.3em;
 }
 
 .brand{
