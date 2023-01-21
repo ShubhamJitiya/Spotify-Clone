@@ -54,7 +54,7 @@ nav ul li{
 
 .bottom{
     position: sticky;
-    height: 130px;
+    height: 7em;
     bottom: 0;
     background-color: black;
     color: whitesmoke;
