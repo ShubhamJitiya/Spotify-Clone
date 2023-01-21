@@ -43,7 +43,6 @@ nav ul li{
     background-color: black;
     color: white;
     font-family: 'Varela Round', sans-serif;
-    font-size: .5rem;
     display: flex;
     margin: 23px auto;
     width: 70%;
@@ -76,4 +75,30 @@ nav ul li{
  
 #myProgressBar{
     width: 80vh;
+}
+
+.songItem {
+    height: 50px;
+    display: flex;
+    background-color: whitesmoke;
+    width: 80%;
+    color: black;
+    margin: 12px 0;
+    justify-content: space-between;
+    align-items: center;
+    border-radius: 24px;
+
+}
+.songItem img{
+    width: 34px;
+    margin: 0 8px;
+    border-radius: 24px;
+}
+
+.timestamp{
+    margin: 0 23px;
+}
+
+.timestamp i{
+    margin-left: 8px;
 }
