@@ -81,7 +81,6 @@ nav ul li{
     height: 50px;
     display: flex;
     background-color: whitesmoke;
-    width: 80%;
     color: black;
     margin: 12px 0;
     justify-content: space-between;
@@ -102,3 +101,4 @@ nav ul li{
 .timestamp i{
     margin-left: 8px;
 }
+
