@@ -110,7 +110,7 @@ nav ul li {
   width: 56px;
   margin-right: 8px;
   opacity: 0;
-  transition: opacity 1s easy-in;
+  transition: opacity 0.3s ease-in;
 }
 
 .songInfo {
