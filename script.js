@@ -66,5 +66,9 @@ Array.from(document.getElementsByClassName('songItemPlay')).forEach((element)=>{
         makeAllPlays();
         e.target.classList.remove('fa-play-circle');
         e.target.classList.add('fa-pause-circle');
+
+        audioElement.src = 'songs/3.mp3';
+        audioElement.currentTime = 0;
+        audioElement.play();
     })
 })
