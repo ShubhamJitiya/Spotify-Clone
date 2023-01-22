@@ -2,18 +2,25 @@ console.log("Welcome to spotify")
 
 //Initialize the variables
 let songIndex = 0;
-let audioElement = new Audio('1.mp3')
+let audioElement = new Audio('songs/1.mp3')
 let masterPlay = document.getElementById('masterPlay')
 let myProgressBar = document.getElementById('myProgressBar');
 let gif = document.getElementById('gif');
+let songsItems = Array.from(document.getElementsByClassName('songItem'));
 
 let songs = [
-    {songName: "Salam-e-Ishq", filePath: "song/1.mp3", coverPath: "covers/1.jpg"},
-    {songName: "Salam-e-Ishq", filePath: "song/1.mp3", coverPath: "covers/1.jpg"},
-    {songName: "Salam-e-Ishq", filePath: "song/1.mp3", coverPath: "covers/1.jpg"},
-    {songName: "Salam-e-Ishq", filePath: "song/1.mp3", coverPath: "covers/1.jpg"},
-    {songName: "Salam-e-Ishq", filePath: "song/1.mp3", coverPath: "covers/1.jpg"},
+    {songName: "Warri yo - Mortals [NCS Release] ", filePath: "songs/1.mp3", coverPath: "covers/1.jpg"},
+    {songName: "Cielo - Huma - Huma", filePath: "songs/2.mp3", coverPath: "covers/2.jpg"},
+    {songName: "DEAF KEV - Invincible", filePath: "songs/3.mp3", coverPath: "covers/3.jpg"},
+    {songName: "Different Heaven & EH!DE - My Heart", filePath: "songs/4.mp3", coverPath: "covers/4.jpg"},
+    {songName: "Janji-Heroes-Tonight-feat-Johnning-NCS-Re1ease", filePath: "songs/5.mp3", coverPath: "covers/5.jpg"},
 ];
+
+songsItems.forEach((element, i)=>{
+    console.log(element, i);
+    element.getElementsByTagName("img")[0].src = songs[i].coverPath;
+    element.getElementsByClassName("songName")[0].innerText = songs[i].songName;
+})
 
 // audioElement.play();
 
