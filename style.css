@@ -74,7 +74,7 @@ nav ul li{
 }
  
 #myProgressBar{
-    width: 80vh;
+    width: 80vw;
 }
 
 .songItemContainer{
@@ -115,6 +115,5 @@ nav ul li{
 
 .songInfo{
     position: absolute;
-    left: 0;
-    margin-left: 32px;
+    left: 10vw;
 }
