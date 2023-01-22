@@ -107,3 +107,14 @@ nav ul li{
     cursor: pointer;
 }
 
+
+.songInfo img{
+   width: 56px;
+   margin-right: 8px;
+}
+
+.songInfo{
+    position: absolute;
+    left: 0;
+    margin-left: 32px;
+}
