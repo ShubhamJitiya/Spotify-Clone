@@ -17,7 +17,7 @@ let songs = [
 ];
 
 songsItems.forEach((element, i)=>{
-    console.log(element, i);
+    // console.log(element, i);
     element.getElementsByTagName("img")[0].src = songs[i].coverPath;
     element.getElementsByClassName("songName")[0].innerText = songs[i].songName;
 })
@@ -44,7 +44,7 @@ audioElement.addEventListener('timeupdate', ()=>{
     console.log('timeupdate')
     //Update seekbar
     let progress = parseInt((audioElement.currentTime/audioElement.duration)*100);
-    console.log(progress);
+    // console.log(progress);
     myProgressBar.value = progress;
 
 })
@@ -53,3 +53,8 @@ myProgressBar.addEventListener('change',()=>{
     audioElement.currentTime = myProgressBar.value * audioElement.duration /100;
 })
 
+Array.from(document.getElementsByClassName('songItemPlay')).forEach((element)=>{
+    element.addEventListener('click', (e)=>{
+        console.log(e);
+    })
+})
