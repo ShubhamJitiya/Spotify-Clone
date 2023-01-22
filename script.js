@@ -38,7 +38,8 @@ audioElement.addEventListener('timeupdate', ()=>{
     //Update seekbar
     let progress = parseInt((audioElement.currentTime/audioElement.duration)*100);
     console.log(progress);
-    
+    myProgressBar.value = progress;
+
 })
 
 
