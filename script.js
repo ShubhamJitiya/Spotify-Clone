@@ -55,6 +55,6 @@ myProgressBar.addEventListener('change',()=>{
 
 Array.from(document.getElementsByClassName('songItemPlay')).forEach((element)=>{
     element.addEventListener('click', (e)=>{
-        console.log(e);
+        console.log(e.target);
     })
 })
